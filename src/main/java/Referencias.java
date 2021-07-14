@@ -1,25 +1,22 @@
 public class Referencias {
 
     public static void main(String[] args) {
-        Gerente gv1 = new Gerente("Ronei Reis", "567", 5000);
-        ControleBoni boni1 = new ControleBoni();
-        boni1.registraGV(gv1);
-        System.out.println(boni1.getSoma());
 
-        Gerente gv2 = new Gerente("Reinaldo Borges", "1567", 6700);
-        ControleBoni boni2 = new ControleBoni();
-        boni2.registraGV(gv2);
-        System.out.println(boni2.getSoma());
+        Funcionario gv1 = new Gerente("Ronei Reis", "567", 5000);
+        Gerente gv2 = new Gerente("Reinaldo Borges", "1567", 7000);
+        Funcionario func = new Funcionario("Karina", "13563", 4000);
 
-        Funcionario func = new Funcionario("Karina", "13563", 4300);
-        ControleBoni func1 = new ControleBoni();
-        func1.registraFunc(func);
-        System.out.println(func1.getSoma());
+        Auxiliar aux = new Auxiliar("Gabriela", "0147", 2000);
 
+        ControleBoni controle =
+                new ControleBoni();
 
+        controle.registra(func);
+        controle.registra(gv1);
+        controle.registra(gv2);
+        controle.registra(aux);
 
-
-
+        System.out.println("Numeros de Bonificados: " + controle.getCont() + ", Total Boni: R$" + controle.getSoma());
 
 
     }
