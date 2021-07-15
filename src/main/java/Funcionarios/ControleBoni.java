@@ -1,9 +1,13 @@
+package Funcionarios;
+
+import Funcionarios.Funcionario;
+
 public class ControleBoni {
     private double soma;
     private int cont =0;
 
 
-    public void registra(Funcionario funcionario){
+    public void valorBonificacao(Funcionario funcionario){
         double registra = funcionario.bonificaoSalario();
         this.soma += registra;
         cont++;

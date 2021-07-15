@@ -9,11 +9,13 @@ public class TestaConta {
         Cliente cliente1 = new Cliente();
         cliente1.setNome("Lara");
 
-        ContaP ContaPoupanca = new ContaP(cliente1, 141, 3426);
-        ContaC conta = new ContaC(cliente,141, 32456);
+        ContaPoupanca cp1 = new ContaPoupanca(cliente1, 141, 3426);
+        ContaCorrente cc1 = new ContaCorrente(cliente,141, 32456);
 
-        conta.deposita(8500);
-        conta.transfere(3200, ContaPoupanca, cliente);
+        cp1.deposita(8500);
+        cp1.transfere(3200, cc1, cliente1);
+        cp1.transfere(400, cc1, cliente1);
+
 
 
 

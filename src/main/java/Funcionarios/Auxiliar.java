@@ -1,4 +1,6 @@
-import com.sun.org.apache.bcel.internal.generic.RETURN;
+package Funcionarios;
+
+import Funcionarios.Funcionario;
 
 public class Auxiliar extends Funcionario {
 

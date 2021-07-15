@@ -1,4 +1,6 @@
-public class Funcionario {
+package Funcionarios;
+
+public abstract class Funcionario {
 
     private String nome;
     private String cpf;
@@ -10,11 +12,10 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public double bonificaoSalario(){
-            double bonoficacao = this.getSalario() * 0.10;
-            return  bonoficacao;
+    //Metodos abstrato, sem codigo
+    public abstract double bonificaoSalario();
 
-    }
+
 
 //get e Set ----- Inicio
     public String getNome() {

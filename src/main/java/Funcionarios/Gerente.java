@@ -1,3 +1,7 @@
+package Funcionarios;
+
+import Funcionarios.Funcionario;
+
 public class Gerente extends Funcionario {
 
     private Funcionario funcionario;
@@ -29,7 +33,7 @@ public class Gerente extends Funcionario {
 
 
     public double bonificaoSalario() {
-        double boniGerente = super.bonificaoSalario() + this.getSalario() * 0.5;
+        double boniGerente = this.getSalario() * 0.5;
         return  boniGerente ;
 
     }

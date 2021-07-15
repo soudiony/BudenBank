@@ -1,6 +1,6 @@
 package Contas;
 
-public class Conta {
+public abstract class Conta {
     private double saldo;
     private int agencia;
     private int numero;
@@ -86,17 +86,6 @@ public class Conta {
         return Conta.total;
     }
 
+    public abstract void transfere(int valor, Conta conta, Cliente cliente);
 
-
-    public void transfere(int valor, Conta conta) {
-        if (this.saldo >= valor) {
-            this.saldo -= valor;
-            System.out.println("Transferencia Efetuada com sucesso.");
-
-
-            System.out.println("Saldo! R$ " + this.saldo);
-
-        } else System.out.println("Saldo Insufuciente.");
-
-    }
 }
