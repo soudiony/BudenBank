@@ -8,7 +8,7 @@ public class TestaFuncionario {
 
     public static void main(String[] args) {
 
-        Gerente gv1 = new Gerente("Ronei Reis", "567", 5000);
+        Gerente  gv1 = new Gerente("Ronei Reis", "567", 5000);
         gv1.setSenha(3312);
 
         Administrador adm = new Administrador("Kiko", "010", 25000);

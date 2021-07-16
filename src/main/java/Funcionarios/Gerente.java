@@ -1,31 +1,6 @@
 package Funcionarios;
 
-public class Gerente extends Funcionario {
-
-    private Funcionario funcionario;
-
-    private int senha;
-
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
-
-    public int getSenha() {
-        return senha;
-
-    }
-    public boolean autentica(int senha) {
-        if (this.senha == senha) {
-            return true;
-
-        } else {
-            return false;
-        }
-    }
-
-
-
-
+public class Gerente extends FuncionarioAutenticador{
 
     public double bonificaoSalario() {
         double boniGerente = this.getSalario() * 0.5;

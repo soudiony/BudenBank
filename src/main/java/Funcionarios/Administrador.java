@@ -1,24 +1,10 @@
 package Funcionarios;
 
-public class Administrador extends Funcionario {
-private int senha;
+public class Administrador extends FuncionarioAutenticador {
 
-    public int getSenha() {
-        return senha;
 
-    }
-
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
-
-    public boolean autentica(int senha) {
-        if (this.senha == senha) {
-            return true;
-
-        } else {
-            return false;
-        }
+    public Administrador(String nome, String cpf, double salario) {
+        super(nome, cpf, salario);
     }
 
     @Override
@@ -26,9 +12,6 @@ private int senha;
 
         return this.getSalario() * 0.70;
 
-    }
-    public Administrador(String nome, String cpf, double salario) {
-        super(nome, cpf, salario);
     }
 
 }
