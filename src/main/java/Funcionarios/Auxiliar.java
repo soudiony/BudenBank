@@ -9,6 +9,7 @@ public class Auxiliar extends Funcionario {
         super(nome, cpf, salario);
     }
 
+    @Override
     public double bonificaoSalario() {
         return  super.getSalario() * 0.2;
 

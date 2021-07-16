@@ -1,1 +1,10 @@
-Funcionario.class
+Contas\ContaCorrente.class
+Funcionarios\Funcionario.class
+Funcionarios\ControleBoni.class
+Contas\ContaPoupanca.class
+Funcionarios\Auxiliar.class
+Contas\Cliente.class
+Contas\TestaConta.class
+Funcionarios\Gerente.class
+Contas\Conta.class
+Funcionarios\TestaFuncionario.class

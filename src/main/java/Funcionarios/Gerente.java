@@ -1,35 +1,26 @@
 package Funcionarios;
 
-import Funcionarios.Funcionario;
-
 public class Gerente extends Funcionario {
 
     private Funcionario funcionario;
-    private int senha;
 
-    public Gerente(String nome, String cpf, double salario) {
-        super(nome, cpf, salario);
-    }
+    private int senha;
 
     public int getSenha() {
         return senha;
+
     }
-
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
-
-    public boolean senhaGerente(int senhaDigitada){
-        if (this.senha == senhaDigitada) {
-
-            System.out.println("Bem Vindo " + this.getNome());
+    public boolean autentica(int senha) {
+        if (this.senha == senha) {
             return true;
 
-        }  else
-            System.out.println("Senha Inválida");
+        } else {
             return false;
-
         }
+    }
+
+
+
 
 
     public double bonificaoSalario() {
@@ -44,4 +35,10 @@ public class Gerente extends Funcionario {
        return this.bonificaoSalario() + super.getSalario();
 
     }
+
+    public Gerente(String nome, String cpf, double salario) {
+        super(nome, cpf, salario);
+    }
+
+
 }
