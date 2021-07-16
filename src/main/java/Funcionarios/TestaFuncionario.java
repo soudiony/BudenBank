@@ -12,7 +12,7 @@ public class TestaFuncionario {
         gv1.setSenha(3312);
 
         Administrador adm = new Administrador("Kiko", "010", 25000);
-        adm.setSenha(2121);
+        adm.setSenha(21221);
 
         SistemaInterno si = new SistemaInterno();
         si.confereAcesso(gv1);
