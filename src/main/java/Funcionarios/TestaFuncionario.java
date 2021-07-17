@@ -15,7 +15,11 @@ public class TestaFuncionario {
         adm.setSenha(21221);
 
         SistemaInterno si = new SistemaInterno();
+
+        System.out.print("Gerente: ") ;
         si.confereAcesso(gv1);
+
+        System.out.print("Administrador: ") ;
         si.confereAcesso(adm);
 
 
