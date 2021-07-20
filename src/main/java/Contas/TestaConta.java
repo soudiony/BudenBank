@@ -11,7 +11,10 @@ public class TestaConta {
 
      //   ContaPoupanca cp1 = new ContaPoupanca(titular1, 141, 3426);
         ContaCorrente cc1 = new ContaCorrente(titular,141, 32456);
-        cc1.deposita(8000);
+        cc1.deposita(800);
+
+        cc1.saca(12000);
+
         System.out.println("Valor Imposto: " + cc1.valores());
 
         CauculaImpostos calc = new CauculaImpostos();
