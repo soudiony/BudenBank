@@ -14,6 +14,9 @@ public abstract class Funcionario {
         this.salario = salario;
     }
 
+    public Funcionario() {
+
+    }
 
 
     //Metodos abstrato, sem codigo

@@ -7,20 +7,31 @@ import Funcionarios.Gerente;
 public class TestaFuncionario {
 
     public static void main(String[] args) {
-
-        Gerente  gv1 = new Gerente("Ronei Reis", "567", 5000);
-        gv1.setSenha(3312);
-
-        Administrador adm = new Administrador("Kiko", "010", 25000);
-        adm.setSenha(21221);
+     Administrador adm = new Administrador();
+     adm.setNome("dionyy");
+     adm.setCpf("2323");
+     adm.setSalario(12345);
+     adm.setSenha(2323);
 
         SistemaInterno si = new SistemaInterno();
+        System.out.print("Administrador: ");
+        si.confereAcesso(adm);
+
+        Gerente  gv1 = new Gerente("Roney", "567", 5000);
+        gv1.setSenha(3312);
 
         System.out.print("Gerente: ") ;
         si.confereAcesso(gv1);
 
-        System.out.print("Administrador: ") ;
-        si.confereAcesso(adm);
+    }
+    }
+
+
+
+
+
+
+
 
 
    //     Funcionario gv2 = new Gerente("Reinaldo Borges", "1567", 7000);
@@ -33,6 +44,4 @@ public class TestaFuncionario {
    //     System.out.println("Numeros de Bonificados: " + controle.getCont() + ", Total Boni: R$" + controle.getSoma());
 
 
-    }
 
-}

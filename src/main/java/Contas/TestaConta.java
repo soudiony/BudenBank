@@ -3,18 +3,29 @@ package Contas;
 public class TestaConta {
     public static void main(String[] args) {
 
-        Cliente cliente = new Cliente();
-        cliente.setNome("diony");
+        Titular titular = new Titular();
+        titular.setNome("diony");
 
-        Cliente cliente1 = new Cliente();
-        cliente1.setNome("Lara");
+    //    Titular titular1 = new Titular();
+    //    titular1.setNome("Lara");
 
-        ContaPoupanca cp1 = new ContaPoupanca(cliente1, 141, 3426);
-        ContaCorrente cc1 = new ContaCorrente(cliente,141, 32456);
+     //   ContaPoupanca cp1 = new ContaPoupanca(titular1, 141, 3426);
+        ContaCorrente cc1 = new ContaCorrente(titular,141, 32456);
+        cc1.deposita(8000);
+        System.out.println("Valor Imposto: " + cc1.valores());
 
-        cp1.deposita(8500);
-        cp1.transfere(3200, cc1, cliente1);
-        cp1.transfere(400, cc1, cliente1);
+        CauculaImpostos calc = new CauculaImpostos();
+        calc.valorImposto(cc1);
+        System.out.println("Valor Imposto 2: " + calc.getTotalPagoImposto());
+
+
+
+      //  cp1.deposita(8500);
+     //   cp1.transfere(3200, cc1, titular1);
+    //    cp1.transfere(400, cc1, titular1);
+
+
+
 
 
 

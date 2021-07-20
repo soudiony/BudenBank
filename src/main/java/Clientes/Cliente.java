@@ -1,23 +1,26 @@
 package Clientes;
 
+import Autenticacao.AutenticaoSistema;
 import Funcionarios.Autenticador;
 
 public class Cliente implements Autenticador {
 
-    private int senhas;
+    private AutenticaoSistema autenticaoSistema;
 
+    public Cliente(){
+        this.autenticaoSistema = new AutenticaoSistema();
+
+}
     @Override
     public void setSenha(int senha) {
-        this.senhas = senha;
+        this.autenticaoSistema.setSenha(senha);
 
     }
 
     @Override
     public boolean autentica(int senha) {
-        if (this.senhas == senha){
-            return true;
-        } else {
-            return false;
-        }
+       return this.autenticaoSistema.autentica(senha);
     }
+
+
 }

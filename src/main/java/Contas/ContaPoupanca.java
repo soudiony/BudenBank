@@ -2,14 +2,14 @@ package Contas;
 
 public class ContaPoupanca extends Conta{
 
-    public ContaPoupanca(Cliente cliente, int agencia, int numero)
+    public ContaPoupanca(Titular titular, int agencia, int numero)
     {
-        super(cliente, agencia, numero);
+        super(titular, agencia, numero);
     }
 
 
     @Override
-    public void transfere(int valor, Conta conta, Cliente cliente) {
+    public void transfere(int valor, Conta conta, Titular titular) {
         if (this.getSaldo() >= valor) {
             this.setSaldo(this.getSaldo() - valor);
             System.out.println("Transferencia Efetuada com sucesso.");

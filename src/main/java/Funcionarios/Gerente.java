@@ -1,23 +1,31 @@
 package Funcionarios;
 
-public class Gerente implements  Autenticador {
+import Autenticacao.AutenticaoSistema;
 
-    private Funcionario funcionario;
+public class Gerente extends Funcionario implements Autenticador {
+
+    private AutenticaoSistema autenticaoSistema;
 
 
-    public Gerente(String nome, String id, int sal) {
+    public Gerente(String nome, String cpf, double salario) {
+        super(nome, cpf, salario);
+
+    }
+
+
+    public Gerente() {
+        autenticaoSistema = new AutenticaoSistema();
+
     }
 
     public double bonificaoSalario() {
-        double boniGerente = funcionario.getSalario()  * 0.5;
-        return  boniGerente ;
+        double boniGerente = this.getSalario() * 0.5;
+        return boniGerente;
 
     }
 
-    public double salarioTotal(){
-      // double total =  super.salario + boni;
-      // return total;
-       return this.bonificaoSalario() + funcionario.getSalario();
+    public double salarioTotal() {
+        return this.bonificaoSalario() + this.getSalario();
 
     }
 
@@ -26,17 +34,14 @@ public class Gerente implements  Autenticador {
     @Override
     public void setSenha(int senha) {
         this.senhas = senha;
-
     }
-
-
 
     @Override
     public boolean autentica(int senha) {
-        if (this.senhas == senha){
+        if (this.senhas == senha) {
             return true;
 
         }
-            return false;
+        return false;
     }
 }

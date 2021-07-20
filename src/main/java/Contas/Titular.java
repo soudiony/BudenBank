@@ -1,6 +1,6 @@
 package Contas;
 
-public class Cliente {
+public class Titular {
     private String nome;
     private String cpf;
     private String profissao;

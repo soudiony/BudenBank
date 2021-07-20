@@ -4,14 +4,14 @@ public abstract class Conta {
     private double saldo;
     private int agencia;
     private int numero;
-    private Cliente cliente;
+    private Titular titular;
 
     private static int total = 0;
 
 
 
 
-    public Conta(Cliente cliente, int agencia, int numero) {
+    public Conta(Titular titular, int agencia, int numero) {
 
         Conta.total++;
 
@@ -73,12 +73,12 @@ public abstract class Conta {
         this.saldo = saldo;
     }
 
-    public Cliente getCliente() {
-        return cliente;
+    public Titular getCliente() {
+        return titular;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
+    public void setCliente(Titular titular) {
+        this.titular = titular;
     }
 
     public static int getTotal()
@@ -86,6 +86,6 @@ public abstract class Conta {
         return Conta.total;
     }
 
-    public abstract void transfere(int valor, Conta conta, Cliente cliente);
+    public abstract void transfere(int valor, Conta conta, Titular titular);
 
 }

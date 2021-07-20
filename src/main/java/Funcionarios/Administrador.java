@@ -1,34 +1,33 @@
 package Funcionarios;
 
+import Autenticacao.AutenticaoSistema;
+
 public class Administrador extends Funcionario implements Autenticador {
 
+    private AutenticaoSistema autenticaoSistema;
 
-   public Administrador(String nome, String cpf, double salario) {
-        super(nome, cpf, salario);
+    public Administrador() {
+        autenticaoSistema = new AutenticaoSistema();
     }
 
- @Override
- public double bonificaoSalario() {
 
- return this.getSalario() * 0.70;
+    @Override
+    public double bonificaoSalario() {
 
-   }
-    private int senhas;
+        return this.getSalario() * 0.70;
+
+    }
 
     @Override
     public void setSenha(int senha) {
-        this.senhas = senha;
+        this.autenticaoSistema.setSenha(senha) ;
 
     }
 
     @Override
     public boolean autentica(int senha) {
-        if (this.senhas == senha) {
-            return true;
-        } else {
-            return false;
+        return this.autenticaoSistema.autentica(senha);
 
-        }
+    }
 
-         }
 }
