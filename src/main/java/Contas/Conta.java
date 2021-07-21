@@ -29,39 +29,6 @@ public abstract class Conta {
         System.out.println("Saldo: R$ " + this.saldo);
     }
 
-    public boolean saca(double valor) {
-
-
-          try {
-              if (this.saldo >= valor) {
-                  this.saldo -= valor;
-
-                  System.out.println("Saque Efetuado com sucesso.");
-                  return true;
-              }
-          }catch (ArithmeticException ex) {
-            ex.getMessage();
-
-
-
-        }
-        System.out.println("Sem Grana.");
-        return false;
-    }
-
-   // public void saca(double valor) {
-   //     try {
-  //          verificaSaldo(valor);
-
-   //     } catch (ArithmeticException err) {
-   //         String erro = err.getMessage();
-   //         System.out.println(erro);
-   //         err.printStackTrace();
-
-//        }
-
-        //}
-
 
 
     public double getSaldo() {
@@ -109,6 +76,7 @@ public abstract class Conta {
         return Conta.total;
     }
 
-    public abstract void transfere(int valor, Conta conta, Titular titular);
+    public abstract void transfere(double valor, Conta conta);
 
+    public abstract void saca(double valor) ;
 }

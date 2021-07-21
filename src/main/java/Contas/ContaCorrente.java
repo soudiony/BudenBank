@@ -15,19 +15,14 @@ public class ContaCorrente extends Conta implements Tributos{
     }
 
     @Override
-    public void transfere(int valor, Conta conta, Titular titular) {
-        if (super.getSaldo() >= valor) {
-            super.setSaldo(super.getSaldo() - valor - this.taxa);
-            System.out.println("Transferencia Efetuada com sucesso.");
-            System.out.println("Taxa Serviço PIX: " + this.taxa);
-
-
-            System.out.println(titular.getNome() + ", seu saldo! R$ " + super.getSaldo());
-
-        } else System.out.println(super.getCliente() + ", seu saldo é Insufuciente.");
+    public void transfere(double valor, Conta conta) {
 
     }
 
+    @Override
+    public void saca(double valor) {
+
+    }
 
     @Override
     public double valores() {
