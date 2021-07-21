@@ -13,7 +13,7 @@ public class TestaConta {
         ContaCorrente cc1 = new ContaCorrente(titular,141, 32456);
         cc1.deposita(800);
 
-        cc1.saca(12000);
+        cc1.saca(1811.32);
 
         System.out.println("Valor Imposto: " + cc1.valores());
 

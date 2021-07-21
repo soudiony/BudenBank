@@ -30,23 +30,38 @@ public abstract class Conta {
     }
 
     public boolean saca(double valor) {
-        try {
-            if (this.saldo >= valor) {
-                this.saldo -= valor;
 
-                System.out.println("Saque Efetuado com sucesso.");
-                return true;
-            } else {
 
-                System.out.println("Sem Grana.");
-            }
-        } catch (ArithmeticException err) {
-            String erro = err.getMessage();
-            System.out.println(erro);
-            err.printStackTrace();
+          try {
+              if (this.saldo >= valor) {
+                  this.saldo -= valor;
+
+                  System.out.println("Saque Efetuado com sucesso.");
+                  return true;
+              }
+          }catch (ArithmeticException ex) {
+            ex.getMessage();
+
+
+
         }
+        System.out.println("Sem Grana.");
         return false;
     }
+
+   // public void saca(double valor) {
+   //     try {
+  //          verificaSaldo(valor);
+
+   //     } catch (ArithmeticException err) {
+   //         String erro = err.getMessage();
+   //         System.out.println(erro);
+   //         err.printStackTrace();
+
+//        }
+
+        //}
+
 
 
     public double getSaldo() {
