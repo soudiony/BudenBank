@@ -17,7 +17,7 @@ public class TestaConta {
 
 
         try  {
-            cp1.transfere(1250, cp2);
+            cp1.transfere(451250, cp2);
 
         } catch (SaldoInsuficienteExepition ex) {
             System.out.println(ex.getMessage());
