@@ -7,11 +7,7 @@ package Anotacoes;
  */
 public class Informacoes {
 
-    //@Override - /sobrescrever metodos..
-
-    //criar @ proprios
-
-    @DoublePositivo
+   @DoublePositivo
     public double numMaiorQueZero(double num) {
         if (num < 0) {
             System.out.println("nao pode negativos");

@@ -13,13 +13,3 @@ public class TestarConexao {
     }
 }
 
-
-//
-//        conex = new Conexao();
-//        conex.leDados();
-   //     } catch (IllegalStateException err) {
-   //        System.out.println(".x.x...Deu erro na conexao..x.x..");
-
-   //     }finally {
-          //  conex.fecha();
-  //      }

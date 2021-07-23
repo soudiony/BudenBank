@@ -1,6 +1,6 @@
 package Contas;
 
-public class ContaPoupanca extends Conta {
+ public class ContaPoupanca extends Conta {
 
     public ContaPoupanca(Titular titular, int agencia, int numero) {
         super(titular, agencia, numero);
