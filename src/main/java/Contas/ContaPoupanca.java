@@ -27,5 +27,10 @@ package Contas;
         super.setSaldo(super.getSaldo() - valor);
         System.out.println("Saque no valor de R$ " + valor + " efetuado com sucesso!!!" + "Saldo Atual: R$ " + this.getSaldo());
     }
-}
+
+     @Override
+     public String toString() {
+         return "Conta Poupanca" + super.toString();
+     }
+ }
 

@@ -79,4 +79,13 @@ public abstract class Conta {
     public abstract void transfere(double valor, Conta conta);
 
     public abstract void saca(double valor) ;
+
+    @Override
+    public String toString() {
+        return  " - saldo= " + saldo +
+                ", agencia= " + agencia +
+                ", numero= " + numero +
+
+                '}';
+    }
 }

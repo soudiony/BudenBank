@@ -10,20 +10,33 @@ public class TestaConta {
         titular2.setNome("Lara Alves");
 
 
-        ContaPoupanca cp2 = new ContaPoupanca(titular2, 141, 45785);
-        ContaPoupanca cp1 = new ContaPoupanca(titular1,141, 32456);
+        Object[] contasObj = new Object[3];
+        contasObj[0] = titular2;
 
-        cp1.deposita(800);
+        Conta[] contaTipo = new Conta[5];
+        contaTipo[3] = new ContaPoupanca(titular2,23,222);
+
+        contaTipo[1] =  new ContaPoupanca(titular1,141, 32456);
+        System.out.println(contaTipo[3] + "Nome: " + titular2);
 
 
-        try  {
-            cp1.transfere(451250, cp2);
 
-        } catch (SaldoInsuficienteExepition ex) {
-            System.out.println(ex.getMessage());
-        }
 
-        cp1.saca(21.32);
+        //  ContaPoupanca cp1 = new ContaPoupanca(titular2, 141, 45785);
+     //   ContaPoupanca cp2 = new ContaPoupanca(titular2, 141, 45785);
+
+
+
+
+
+      //  try  {
+     //       cp1.transfere(451250, cp2);
+
+     //   } catch (SaldoInsuficienteExepition ex) {
+       //     System.out.println(ex.getMessage());
+     //   }
+
+      //  cp1.saca(21.32);
 
 
         //System.out.println("Valor Imposto: " + cc1.valores());
