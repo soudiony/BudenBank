@@ -4,16 +4,12 @@ import Contas.Conta;
 import Contas.ContaPoupanca;
 import Contas.Titular;
 
+import java.util.ArrayList;
+
 public class Testes {
 
     public static void main(String[] args) {
-      //  int[] idade = new int[3];
-//        idade[0] = 1;
-//
-//        for (int x = 0; x < idade.length; x++) {
-//            System.out.println(idade[x]);
-//        }
-//
+
 //        try {
 //            System.out.println( "O Campo nao esta vazio - " + idade[8]);
 //        } catch (ArrayIndexOutOfBoundsException err) {
@@ -29,19 +25,36 @@ public class Testes {
         Conta cp1 = new ContaPoupanca(titular1, 12, 123);
         Conta cp2 = new ContaPoupanca(titular1, 132, 3123);
         Conta cp3 = new ContaPoupanca(titular1, 1232, 234123);
+        Conta cp4 = new ContaPoupanca(titular1, 12, 123);
 
-        GuardaContas guardaContas = new GuardaContas();
-        guardaContas.add(cp1);
-        guardaContas.add(cp2);
-        guardaContas.add(cp3);
+        ArrayList<Conta> list = new ArrayList<Conta>();
 
-        int pos = guardaContas.getPosicao();
-        System.out.println("Posicao: " + pos);
+        //if (list.contains(cp1)){
+        //    System.out.println("A Conta ja Existe!");
+       // } else
 
 
-        for (int x = 0; x < pos; x++ ) {
-            System.out.println("Nova Versao :"+ guardaContas.getContas(x));
+        list.add(cp1);
+        list.add(cp2);
+        list.add(cp3);
+
+        System.out.println("CONTEM - Esta conta ja contém no BD? "+ list.contains(cp1));
+        System.out.println("EQUAL -  Esta conta ja contém no BD? "+ cp1.equals(cp4));
+
+
+      // try {
+        //   boolean retornoConta = list.contains(cp2);
+        //   System.out.println(retornoConta);
+//
+    //    } catch (Erros err){
+
+    //   };
+
+
+        for (Conta c:list){
+            System.out.println(c);
         }
+
 
     }
 

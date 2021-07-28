@@ -76,17 +76,16 @@ public abstract class Conta extends Object{
     }
 
 
-  @Override
+    @Override
     public int hashCode() {
         return Objects.hash(agencia, numero);
     }
 
     @Override
     public boolean equals(Object obj) {
-        Conta outra = (Conta) obj;
+       Conta outra = (Conta) obj;  //cast
 
-
-        if ((this.agencia ==  ((Conta) obj).agencia) && (this.numero == ((Conta) obj).numero)) {
+        if ((this.agencia == outra.agencia ) && (this.numero == outra.numero)) {
             return true;
         } else {
             return false;
