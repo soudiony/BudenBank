@@ -11,10 +11,14 @@ public class TestaConta {
         
         
         String st = new String();
-        st
+        st.getBytes();
+        
+        
+
 
 
         ContaPoupanca cp2 = new ContaPoupanca(titular2, 141, 45785);
+
         ContaPoupanca cp1 = new ContaPoupanca(titular1,141, 32456);
 
         cp1.deposita(800);
