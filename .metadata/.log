@@ -42,3 +42,180 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ui 2 2 2021-07-28 13:41:26.669
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:01:24.873
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:01:24.875
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@41629df6[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:01:24.896
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:01:24.964
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:01:36.673
+!MESSAGE Boot LS startup time from start to initialized: 11769ms
+
+!ENTRY org.eclipse.jface.text 4 0 2021-07-28 14:01:36.676
+!MESSAGE java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1155)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:479)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1146)
+	... 6 more
+
+!ENTRY org.eclipse.jface.text 4 0 2021-07-28 14:01:36.678
+!MESSAGE java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1155)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:479)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1146)
+	... 6 more
+
+!ENTRY org.eclipse.jface.text 4 0 2021-07-28 14:01:36.679
+!MESSAGE java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1155)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:479)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1146)
+	... 6 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:01:36.878
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.qNSRbTttisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:01:36.881
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:01:36.883
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:01:36.885
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:01:36.886
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.qNSRbTtt => OK
+
+!ENTRY Activator 1 0 2021-07-28 14:01:59.015
+!MESSAGE Fetching content from: https://github.com/spring-guides/gs-spring-boot/archive/HEAD.zip
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:02:11.575
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qNSRbTtt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:02:11.577
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.qNSRbTtt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:02:11.579
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 14:02:11.581
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qNSRbTtt => OK
+
+!ENTRY Activator 1 0 2021-07-28 14:02:30.993
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:32.021
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:32.260
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:32.340
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:32.848
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:33.417
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:33.679
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:33.732
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:33.785
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:37.519
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:37.566
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:37.703
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:37.748
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:37.875
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:37.915
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:38.057
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:38.303
+!MESSAGE Has main method computation for project 'gs-spring-boot-complete'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:50.493
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:50.515
+!MESSAGE Has main method computation for project 'gs-spring-boot-complete'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:54.072
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:54.072
+!MESSAGE Has main method computation for project 'gs-spring-boot-complete'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:54.185
+!MESSAGE Has main method computation for project 'gs-spring-boot-complete'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:54.190
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:54.365
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:55.194
+!MESSAGE Has main method computation for project 'gs-spring-boot-complete'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:55.317
+!MESSAGE Has main method computation for project 'gs-spring-boot-initial'
+
+!ENTRY Activator 1 0 2021-07-28 14:02:55.318
+!MESSAGE Has main method computation for project 'gs-spring-boot-complete'
