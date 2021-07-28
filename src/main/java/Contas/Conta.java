@@ -1,14 +1,15 @@
 package Contas;
 
-public abstract class Conta {
+import java.util.Objects;
+
+
+public abstract class Conta extends Object{
     private double saldo;
     private int agencia;
     private int numero;
     private Titular titular;
 
     private static int total = 0;
-
-
 
 
     public Conta(Titular titular, int agencia, int numero) {
@@ -20,7 +21,6 @@ public abstract class Conta {
 
         System.out.println(Conta.total + " Conta Criada: Ag: " + this.agencia + " Num: " + this.numero);
     }
-
 
 
     public void deposita(double valor) {
@@ -71,12 +71,38 @@ public abstract class Conta {
         this.titular = titular;
     }
 
-    public static int getTotal()
-    {
+    public static int getTotal() {
         return Conta.total;
+    }
+
+
+  @Override
+    public int hashCode() {
+        return Objects.hash(agencia, numero);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Conta outra = (Conta) obj;
+
+
+        if ((this.agencia ==  ((Conta) obj).agencia) && (this.numero == ((Conta) obj).numero)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public abstract void transfere(double valor, Conta conta);
 
-    public abstract void saca(double valor) ;
+    public abstract void saca(double valor);
+
+    @Override
+    public String toString() {
+        return " - saldo= " + saldo +
+                ", agencia= " + agencia +
+                ", numero= " + numero +
+
+                '}';
+    }
 }

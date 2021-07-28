@@ -24,4 +24,10 @@ public class Titular {
         this.profissao = profissao;
     }
 
+    @Override
+    public String toString() {
+        return "Titular{" +
+                "nome='" + nome + '\'' +
+                '}';
+    }
 }
