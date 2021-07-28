@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\TI\Documents\GitHub\MeuPc\BudenBank\BudenBank\.metadata\.plugins\org.eclipse.jdt.core
+1142988539.index
