@@ -45,5 +45,19 @@ public class TesteUtil {
         System.out.println("***"+ vari1);
 
 
+        //int num = Integer.parseInt("10");
+        //double num = Double.parseDouble("10");
+        String s = args[0];
+
+
+        System.out.println("ORGANOGRAMA: " + s);
+        System.out.println("PLANO DE AÇÃO: " + s);
+        System.out.println("CHAMADADOS: " + s);
+        System.out.println("BEES: " + s);
+        System.out.println("PORTARIA: " + s);
+
+
+
+
     }
 }
