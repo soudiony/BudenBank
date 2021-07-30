@@ -98,10 +98,9 @@ public abstract class Conta extends Object{
 
     @Override
     public String toString() {
-        return " - saldo= " + saldo +
-                ", agencia= " + agencia +
-                ", numero= " + numero +
-
-                '}';
+        return " - saldo:  " + saldo +
+                ", agencia:  " + agencia +
+                ", numero:  " + numero +
+                ", titular: " + titular.getNome();
     }
 }
