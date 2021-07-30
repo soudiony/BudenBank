@@ -6,10 +6,14 @@ import Contas.Titular;
 import Testando.Conexao;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class TesteUtil {
     public static void main(String[] args) {
-        ArrayList<Conta> list = new ArrayList<Conta>();
+        List<Conta> list = new ArrayList<Conta>();
+        List<Conta> listas= new LinkedList<>() ;
+
 
         Titular titular = new Titular();
         titular.setNome("diony");
@@ -33,6 +37,12 @@ public class TesteUtil {
         for (Conta x : list){
             System.out.println(x);
         }
+
+        Integer vari = Integer.valueOf("13");
+        System.out.println("***"+ vari);
+
+        int vari1 = Integer.parseInt("13");
+        System.out.println("***"+ vari1);
 
 
         //int num = Integer.parseInt("10");
