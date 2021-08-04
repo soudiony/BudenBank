@@ -59,8 +59,8 @@ public class TesteString {
 
         ClassificaSaldo classificaSaldo = new ClassificaSaldo();
 
-        ComparaNome comparaNome = new ComparaNome();
-        comparaNome.compare(cc1, cc2);
+        //ComparaNome comparaNome = new ComparaNome();
+      //  comparaNome.compare(cc1, cc2);
 
 
         System.out.println("-Numero--------");
@@ -87,7 +87,7 @@ public class TesteString {
         }
         System.out.println("---------");
 
-        lista.sort(comparaNome);
+      //  lista.sort(comparaNome);
         for (Conta conta : lista) {
             System.out.println(conta);
         }

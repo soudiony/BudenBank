@@ -27,7 +27,7 @@ public class Titular {
     @Override
     public String toString() {
         return "Titular{" +
-                "nome='" + nome + '\'' +
+                "nome='" + this.getNome() + '\'' +
                 '}';
     }
 }

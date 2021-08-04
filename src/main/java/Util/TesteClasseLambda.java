@@ -8,8 +8,9 @@ import Contas.Titular;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 
-public class TesteLambda {
+public class TesteClasseLambda {
     public static void main(String[] args) {
 
 
@@ -32,40 +33,42 @@ public class TesteLambda {
         lista.add(cc3);
         lista.add(cc4);
 
-        ClassificarContas classificarContas = new ClassificarContas();
-        System.out.println("-----------sem ordenado");
 
+        System.out.println("-----------sem ordenado");
         for (Conta conta : lista) {
             System.out.println(conta);
         }
 
-        lista.sort(classificarContas);
+        System.out.println("----------ordenado por Conta");
+        lista.sort((c1, c2) -> Integer.compare(c1.getAgencia() * c1.getNumero(), c2.getNumero() * c2.getNumero()));
 
-        System.out.println("----------ordenado");
-        for (Conta c : lista) {
-            System.out.println(c);
-        }
-    }
-
-}
-
-class ClassificarContas implements Comparator<Conta> {
-
-    @Override
-    public int compare(Conta conta1, Conta conta2) {
-        int c3, c4;
-        c3 = conta1.getAgencia() * conta1.getNumero();
-
-        c4 = conta2.getNumero() * conta2.getNumero();
+        lista.forEach((conta) -> System.out.println(conta ));
 
 
-        if (c3 < c4) {
-            return -1;
-        }
-        if (c3 > c4) {
-            return 1;
-        }
-        return 0;
     }
 }
+
+
+
+
+        //    for (Conta c : lista) { System.out.println(c);}
+
+
+//        System.out.println("----------ordenado por Nome");
+//
+//        Comparator<Conta> porNome = ((Conta c1, Conta c2) -> {
+//            String comp1, comp2;
+//
+//            comp1 = c1.getCliente().getNome();
+//            comp2 = c2.getCliente().getNome();
+//            return comp1.compareTo(comp2);
+//
+//        });
+//
+//        lista.sort(porNome);
+//
+//        for (Conta c : lista) {
+//            System.out.println(c);
+//        }
+
 

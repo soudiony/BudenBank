@@ -100,7 +100,6 @@ public abstract class Conta extends Object{
     public String toString() {
         return " - saldo:  " + saldo +
                 ", agencia:  " + agencia +
-                ", numero:  " + numero +
-                ", titular: " + titular.getNome();
+                ", numero:  " + numero;
     }
 }
