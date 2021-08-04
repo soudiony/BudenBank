@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class TesteEntrada {
+public class ioTesteEntrada {
     public static void main(String[] args) throws FileNotFoundException {
 
         Scanner scanner = new Scanner(new File("contas.csv"));
