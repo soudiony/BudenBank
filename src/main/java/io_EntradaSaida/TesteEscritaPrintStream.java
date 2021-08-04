@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintStream;
 
-public class TesteEscritaNovo {
+public class TesteEscritaPrintStream {
     public static void main(String[] args) throws IOException {
 
         PrintStream pr = new PrintStream("dados2.txt");
