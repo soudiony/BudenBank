@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ioTesteEntrada {
     public static void main(String[] args) throws FileNotFoundException {
 
-        Scanner scanner = new Scanner(new File("contas.csv"));
+        Scanner scanner = new Scanner(new File("contas.csv"),  "UTF-8");
 
         while (scanner.hasNextLine()) {
             String linha = scanner.nextLine();
@@ -25,7 +25,8 @@ public class ioTesteEntrada {
             String v4 = linhaAlinha.next();
             double v5 = linhaAlinha.nextDouble();
 
-            System.out.println(v1 + v2 + v3 + v4 + v5);
+            String formatado = String.format(Locale.GERMANY, "%s - %d - %d - %s - %07.2f ", v1, v2 , v3 , v4 , v5);
+            System.out.println(formatado);
 
 
         }

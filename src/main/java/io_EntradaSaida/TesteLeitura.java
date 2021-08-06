@@ -5,11 +5,11 @@ import java.io.*;
 public class TesteLeitura {
     public static void main(String[] args) throws IOException {
         FileInputStream fils = new FileInputStream("dados.txt");
-        InputStreamReader isr = new InputStreamReader(fils);
+        Reader isr = new InputStreamReader(fils, "UTF-8");
         BufferedReader br = new BufferedReader(isr);
 
         String linha = br.readLine();
-        br.close();
+
 
         while (linha != null) {
 
@@ -17,6 +17,6 @@ public class TesteLeitura {
             linha = br.readLine();
 
         }
-
+        br.close();
     }
 }

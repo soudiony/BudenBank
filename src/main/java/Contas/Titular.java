@@ -1,6 +1,9 @@
 package Contas;
 
-public class Titular {
+import java.io.Serializable;
+
+public class Titular implements Serializable {
+
     private String nome;
     private String cpf;
     private String profissao;
@@ -15,7 +18,7 @@ public class Titular {
         return cpf;
     }
     public void setCpf(String cpf) {
-        this.cpf = cpf;
+        cpf = cpf;
     }
     public String getProfissao() {
         return profissao;
